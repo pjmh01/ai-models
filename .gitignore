@@ -1,0 +1,45 @@
+# ─── Python ──────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ─── Data / Models (large files not in Git) ──
+data/raw/
+data/processed/
+models/checkpoints/
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.gguf
+*.safetensors
+runs/
+wandb/
+mlruns/
+
+# ─── Rust (if embedded Rust code) ────────────
+target/
+Cargo.lock
+
+# ─── C (if tinyML on MCU) ────────────────────
+*.o
+*.elf
+*.bin
+build/
+
+# ─── IDE / OS ────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ─── Logs / Temp ─────────────────────────────
+*.log
+tmp/
+scratch/
